@@ -44,7 +44,8 @@ def register(file, nome='<desconhecido>', idade=0):
         return print(RED + 'ERROR')
     else:
         try:
-            file.write('\n{}            {}'.format(nome, idade))
+            space = '-'
+            file.write('\n{} {} {} Anos'.format(nome, space, idade))
         except:
             return print(RED + 'ERROR, NÃO CONSEGUIMOS GRAVAR O CADASTRO')
         else:
